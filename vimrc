@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'  " New line!!
+Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -26,15 +27,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" URL: http://vim.wikia.com/wiki/Example_vimrc
-" Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
-" Description: A minimal, but feature rich, example .vimrc. If you are a
-"              newbie, basing your first .vimrc on this file is a good choice.
-"              If you're a more advanced user, building your own .vimrc based
-"              on this file is still a good idea.
- 
 "------------------------------------------------------------
-" Features {{{1
+" Features
 "
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
@@ -43,17 +37,12 @@ filetype plugin indent on    " required
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
  
-" Attempt to determine the type of a file based on its name and possibly its
-" contents. Use this to allow intelligent auto-indenting for each filetype,
-" and for plugins that are filetype specific.
-filetype indent plugin on
- 
 " Enable syntax highlighting
 syntax on
  
  
 "------------------------------------------------------------
-" Must have options {{{1
+" Must have options 
 "
 " These are highly recommended options.
  
@@ -172,4 +161,3 @@ colorscheme solarized
 
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_python_binary_path = '/usr/bin/python'
-
