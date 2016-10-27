@@ -10,7 +10,7 @@ mkdir -p ~/src
 cd ~/src 
 git clone https://github.com/vim/vim.git
 cd vim
-chmod -r 777 *
+chmod -R 777 *
 ./configure --with-features=huge \
             --enable-multibyte \
             --enable-rubyinterp \
