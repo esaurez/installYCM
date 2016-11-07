@@ -5,7 +5,7 @@ sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
     python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git checkinstall\
     build-essential python-dev python3-dev
-sudo apt-get remove vim vim-runtime gvim
+sudo apt-get remove -y vim vim-runtime gvim vim-common
 mkdir -p ~/src
 cd ~/src 
 git clone https://github.com/vim/vim.git
