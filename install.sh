@@ -7,7 +7,15 @@ sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
     build-essential python-dev python3-dev
 sudo apt-get remove -y vim vim-runtime gvim vim-common
 mkdir -p ~/src
-cd ~/src 
+cd ~/src
+echo "Install cmake"
+wget http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz
+tar xf cmake-3.2.2.tar.gz
+cd cmake-3.2.2
+./configure
+make
+sudo checkinstall -y --pkgname cmake
+cd ~/src
 git clone https://github.com/vim/vim.git
 cd vim
 chmod -R 777 *
